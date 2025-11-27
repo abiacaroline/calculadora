@@ -1,11 +1,15 @@
 const display = document.querySelector(".display")
 
 function adicionarCaracter(caracter) {
-    display.value += caracter
+    if (display.value === "0") {
+        display.value = caracter
+    } else {
+        display.value += caracter
+    }
 }
 
 function limparTela() {
-    display.value = ''
+    display.value = '0'
 }
 
 function inverte() {
