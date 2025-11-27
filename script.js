@@ -16,3 +16,7 @@ function inverte() {
     display.value = Number(display.value) * -1
 
 }
+
+function calcular() {
+    display.value = eval(display.value)
+}
